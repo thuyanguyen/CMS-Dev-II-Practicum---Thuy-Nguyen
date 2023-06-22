@@ -11,12 +11,13 @@
     <a href="#main-content" class="header__skip">Skip to main content</a>
 
     <div class="header__col-left">
-        {% module "rich_text" path="@hubspot/rich_text" %}
+        {% module "site_logo" path="@hubspot/logo" %}
+
+        {% module_block module "rich_text" path="@hubspot/rich_text" %}
             {% module_attribute "html" %}
-                <h1 class="header__title">This is my practicum</h1>
-                <p class="header__text">For HubSpot CMS for Developers II</p>
+                <p class="header__text">HubSpot CMS for Developers II</p>
             {% end_module_attribute %}
-        {% end module %}
+        {% end_module_block %}
     </div>
     <div class="header__col-right">
         <nav class="header__nav">

@@ -1,0 +1,25 @@
+<!--
+    templateType: page
+    label: Home
+    isAvailableForNewContent: true
+-->
+
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+    {% dnd_area "dnd_area"
+        label="Main section"
+        class="body-container body-container---home" 
+    %}
+        {% dnd_section %}
+            {% dnd_module "rich_text" path="@hubspot/rich_text" %}
+                {% module_attribute "html" %}
+                  <h1 class="main__heading">This is the page title</h1>
+                {% end_module_attribute %}
+            {% end_dnd_module %}
+        {% end_dnd_section %}
+
+    {% end_dnd_area %}
+
+{% endblock body %}

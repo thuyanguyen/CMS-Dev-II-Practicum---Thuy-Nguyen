@@ -1,0 +1,27 @@
+/* Generic
+Resetting box-sizing and margin properties
+*/
+
+{% include './generic/_reset.css' %}
+
+/* Objects */
+
+{% include './objects/_layout.css' %}
+{% include './objects/_containers-dnd.css' %}
+
+/* Elements 
+Base HTML typography styles 
+*/
+
+{% include './elements/_typography.css' %}
+
+/* Theme specific styling 
+Includes setting font-family and theme colors
+*/
+{##### Variables #####}
+
+/* Colors */
+{% set primary_color = theme.global_colors.primary.color %}
+{% set secondary_color = theme.global_colors.secondary.color %}
+{% set accent_color = theme.global_colors.tertiary.color %}
+
