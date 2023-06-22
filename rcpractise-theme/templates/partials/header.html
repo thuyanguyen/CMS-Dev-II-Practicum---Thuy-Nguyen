@@ -1,0 +1,33 @@
+<!--
+    templateType: global_partial
+    label: Website header
+    isAvailableForNewContent: false
+-->
+<!-- Begin partial -->
+
+<header class="header">
+
+    {# A navigation skipper for users using keyboard to skip the navigation #}
+    <a href="#main-content" class="header__skip">Skip to main content</a>
+
+    <div class="header__col-left">
+        {% module "rich_text" path="@hubspot/rich_text" %}
+            {% module_attribute "html" %}
+                <h1 class="header__title">This is my practicum</h1>
+                <p class="header__text">For HubSpot CMS for Developers II</p>
+            {% end_module_attribute %}
+        {% end module %}
+    </div>
+    <div class="header__col-right">
+        <nav class="header__nav">
+            <ul class="nav__items">
+                <li class="nav__item">About</li>
+                <li class="nav__item">News</li>
+                <li class="nav__item">Contact</li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<!-- End partial -->
