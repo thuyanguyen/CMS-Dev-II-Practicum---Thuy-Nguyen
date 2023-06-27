@@ -20,11 +20,11 @@
                     }
                 },
                 "default": {
-                    "color": "#0A0A1E"
+                    "color": "#EBDFD2"
                 }
             },
             {
-                "label": "Secondary",
+                "label": "Brand color 2",
                 "name": "secondary",
                 "type": "color",
                 "alternate_names": ["secondary_color"],
@@ -39,11 +39,11 @@
                     }
                 },
                 "default": {
-                    "color": "#1E6ED2"
+                    "color": "#F55046"
                 }
             },
             {
-                "label": "Tertiary",
+                "label": "Brand color 3",
                 "name": "tertiary",
                 "type": "color",
                 "visibility": {
@@ -57,46 +57,43 @@
                     }
                 },
                 "default": {
-                    "color": "#AFD2FF"
-                }
-            }
-        ]
-    },
-    {
-        "type": "group",
-        "name": "global_fonts",
-        "label": "Global fonts",
-        "children": [
-            {
-                "type": "font",
-                "name": "primary_font",
-                "label": "Primary font",
-                "alternate_names": ["body_font"],
-                "inherited_value": {
-                    "property_value_paths": {
-                        "color": "theme.global_colors.primary.color"
-                    }
-                },
-                "default": {
-                    "fallback": "monospace",
-                    "font": "IBM Plex Mono",
-                    "font_set": "GOOGLE"
+                    "color": "#0A0A1E"
                 }
             },
             {
-                "type": "font",
-                "name": "secondary_font",
-                "label": "Secondary font",
-                "alternate_names": ["heading_font"],
+                "label": "Brand color 4",
+                "name": "quaternary",
+                "type": "color",
+                "visibility": {
+                    "hidden_subfields": {
+                        "opacity": true
+                    }
+                },
                 "inherited_value": {
                     "property_value_paths": {
-                        "color": "theme.global_colors.secondary.color"
+                        "color": "brand_settings.colors[3]"
                     }
                 },
                 "default": {
-                    "fallback": "sans-serif",
-                    "font": "Montserrat",
-                    "font_set": "GOOGLE"
+                    "color": "#AFD2FF"
+                }
+            },
+            {
+                "label": "Brand color 5",
+                "name": "quinary",
+                "type": "color",
+                "visibility": {
+                    "hidden_subfields": {
+                        "opacity": true
+                    }
+                },
+                "inherited_value": {
+                    "property_value_paths": {
+                        "color": "brand_settings.colors[4]"
+                    }
+                },
+                "default": {
+                    "color": "#1E6ED2"
                 }
             }
         ]

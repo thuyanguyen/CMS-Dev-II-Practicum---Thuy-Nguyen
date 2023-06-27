@@ -1,0 +1,37 @@
+{% set primary_color = theme.global_colors.primary.color %}
+{% set brand_color_2 = theme.global_colors.secondary.color %}
+{% set brand_color_3 = theme.global_colors.tertiary.color %}
+{% set brand_color_4 = theme.global_colors.quaternary.color %}
+{% set brand_color_5 = theme.global_colors.quinary.color %}
+
+{###########################################################################}
+{############################  1. Typography  ##############################}
+{###########################################################################}
+
+html,
+body {
+    font-size: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: {{ brand_color_3 }};
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: {{ brand_color_5 }};
+}
+
+
+{###########################################################################}
+{###########################  2. Header/Footer  ############################}
+{###########################################################################}
+
+header,
+footer {
+    background-color: {{ brand_color_5 }};
+    color: {{ primary_color }}
+}
