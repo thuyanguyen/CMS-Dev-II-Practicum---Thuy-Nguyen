@@ -25,3 +25,5 @@ Includes setting font-family and theme colors
 {% set secondary_color = theme.global_colors.secondary.color %}
 {% set accent_color = theme.global_colors.tertiary.color %}
 
+/* Partials */
+{% include './components/_header.css' %}

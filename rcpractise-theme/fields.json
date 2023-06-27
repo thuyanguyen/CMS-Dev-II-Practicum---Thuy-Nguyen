@@ -61,5 +61,44 @@
                 }
             }
         ]
+    },
+    {
+        "type": "group",
+        "name": "global_fonts",
+        "label": "Global fonts",
+        "children": [
+            {
+                "type": "font",
+                "name": "primary_font",
+                "label": "Primary font",
+                "alternate_names": ["body_font"],
+                "inherited_value": {
+                    "property_value_paths": {
+                        "color": "theme.global_colors.primary.color"
+                    }
+                },
+                "default": {
+                    "fallback": "monospace",
+                    "font": "IBM Plex Mono",
+                    "font_set": "GOOGLE"
+                }
+            },
+            {
+                "type": "font",
+                "name": "secondary_font",
+                "label": "Secondary font",
+                "alternate_names": ["heading_font"],
+                "inherited_value": {
+                    "property_value_paths": {
+                        "color": "theme.global_colors.secondary.color"
+                    }
+                },
+                "default": {
+                    "fallback": "sans-serif",
+                    "font": "Montserrat",
+                    "font_set": "GOOGLE"
+                }
+            }
+        ]
     }
 ]
