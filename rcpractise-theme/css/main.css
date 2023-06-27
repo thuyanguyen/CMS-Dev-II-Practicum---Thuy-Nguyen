@@ -27,3 +27,4 @@ Includes setting font-family and theme colors
 
 /* Partials */
 {% include './components/_header.css' %}
+{% include './components/_footer.css' %}

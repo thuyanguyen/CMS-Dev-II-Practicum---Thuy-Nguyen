@@ -1,0 +1,109 @@
+[ {
+  "id" : "c21dc9aa-06c4-1da0-b21e-2ed4ed32d88a",
+  "name" : "card",
+  "display_width" : null,
+  "label" : "Card",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 2,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "ddb9a654-7597-e06a-2c6f-e7127b74d19d",
+    "name" : "card_img",
+    "display_width" : null,
+    "label" : "Card Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.refuelcreative.com.au/hubfs/undefined-Jun-26-2023-01-07-08-7857-AM.png",
+      "alt" : "Placeholder image",
+      "loading" : "lazy",
+      "width" : 605,
+      "height" : 451,
+      "max_width" : 605,
+      "max_height" : 451
+    }
+  }, {
+    "id" : "ad6a8cf3-897f-e2e9-a811-15b154624dfe",
+    "name" : "card_text",
+    "display_width" : null,
+    "label" : "Card Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><strong>Card Title</strong></p>\n<p>This is text for the card</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "card_img" : {
+      "size_type" : "auto",
+      "src" : "https://www.refuelcreative.com.au/hubfs/undefined-Jun-26-2023-01-07-08-7857-AM.png",
+      "alt" : "Placeholder image",
+      "loading" : "lazy",
+      "width" : 605,
+      "height" : 451,
+      "max_width" : 605,
+      "max_height" : 451
+    },
+    "card_text" : "<p><strong>Card Title</strong></p>\n<p>This is text for the card</p>"
+  }, {
+    "card_img" : {
+      "size_type" : "auto",
+      "src" : "https://www.refuelcreative.com.au/hubfs/undefined-Jun-26-2023-01-07-08-7857-AM.png",
+      "alt" : "Placeholder image",
+      "loading" : "lazy",
+      "width" : 605,
+      "height" : 451,
+      "max_width" : 605,
+      "max_height" : 451
+    },
+    "card_text" : "<p><strong>Card Title</strong></p>\n<p>This is text for the card</p>"
+  }, {
+    "card_img" : {
+      "size_type" : "auto",
+      "src" : "https://www.refuelcreative.com.au/hubfs/undefined-Jun-26-2023-01-07-08-7857-AM.png",
+      "alt" : "Placeholder image",
+      "loading" : "lazy",
+      "width" : 605,
+      "height" : 451,
+      "max_width" : 605,
+      "max_height" : 451
+    },
+    "card_text" : "<p><strong>Card Title</strong></p>\n<p>This is text for the card</p>"
+  }, {
+    "card_img" : {
+      "size_type" : "auto",
+      "src" : "https://www.refuelcreative.com.au/hubfs/undefined-Jun-26-2023-01-07-08-7857-AM.png",
+      "alt" : "Placeholder image",
+      "loading" : "lazy",
+      "width" : 605,
+      "height" : 451,
+      "max_width" : 605,
+      "max_height" : 451
+    },
+    "card_text" : "<p><strong>Card Title</strong></p>\n<p>This is text for the card</p>"
+  }, {
+    "card_img" : {
+      "size_type" : "auto",
+      "src" : "https://www.refuelcreative.com.au/hubfs/undefined-Jun-26-2023-01-07-08-7857-AM.png",
+      "alt" : "Placeholder image",
+      "loading" : "lazy",
+      "width" : 605,
+      "height" : 451,
+      "max_width" : 605,
+      "max_height" : 451
+    },
+    "card_text" : "<p><strong>Card Title</strong></p>\n<p>This is text for the card</p>"
+  } ]
+} ]

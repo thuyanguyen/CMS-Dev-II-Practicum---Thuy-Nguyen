@@ -1,0 +1,42 @@
+<!--
+    templateType: section
+    label: Page Drag and Drop - Image and Text
+    description: Image and text side-by-side
+    isAvailableForNewContent: true
+-->
+
+{% dnd_section %}
+  {% dnd_column 
+    max_width=1200,
+    padding={
+      'top':'2em',
+      'bottom':'2em',
+      'left':'1em',
+      'right':'1em'
+    }
+  %}
+    {% dnd_module path="@hubspot/text" value="<h2>Section Title</h2>" %}
+    {% end_dnd_module %}
+    {% dnd_row %}
+      {% dnd_module path="@hubspot/linked_image", 
+        width='5', 
+        img={
+          "src": "https://static.hubspot.com/final/img/content/email-template-images/placeholder_200x200.png",
+          "alt": "placeholder_200x200",
+          "loading": "disabled",
+          "width": 200,
+          "height": 200
+        },
+        horizontal_alignment='CENTER'
+      %}
+      {% end_dnd_module %}
+      {% dnd_module path="@hubspot/rich_text" width='7' offset='5', vertical_alignment='MIDDLE' %}
+        {% module_attribute 'html' %}
+          <div>
+            {{ context.content || '<h3>A title for your picture</h3>' }}
+          </div>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}

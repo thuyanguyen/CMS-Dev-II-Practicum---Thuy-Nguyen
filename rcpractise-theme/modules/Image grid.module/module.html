@@ -1,0 +1,19 @@
+<div class="card-container">
+  {% for item in module.card %}
+  
+  <div class="card-container__content">
+    {% if item.card_img.src %}
+      {% set sizeAttrs = 'width="{{ item.card_img.width }}" height="{{ item.card_img.height }}"' %}
+      {% if item.card_img.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.card_img.width }}" height="{{ item.card_img.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif item.card_img.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.card_img.max_width }}" height="{{ item.card_img.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+       {% set loadingAttr = item.card_img.loading != 'disabled' ? 'loading="{{ item.card_img.loading }}"' : '' %}
+      <img src="{{ item.card_img.src }}" alt="{{ item.card_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+    {% inline_rich_text field="card_text" value="{{ item.card_text }}" %}    
+  </div>
+
+  {% endfor %}
+</div>
